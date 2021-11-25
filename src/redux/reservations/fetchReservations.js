@@ -7,7 +7,7 @@ const fetchReservations = async (username) => {
     headers: authHeader(),
   };
   const response = await fetch(
-    `http://localhost:3000/api/v1/users/${username}/reservations`,
+    `https://sleepy-ridge-33847.herokuapp.com/api/v1/users/${username}/reservations`,
     requestOptions,
   );
   const result = await response.json();
